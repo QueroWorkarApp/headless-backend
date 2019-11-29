@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/jobtypes",
+      "handler": "Jobtype.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/jobtypes/count",
+      "handler": "Jobtype.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/jobtypes/:id",
+      "handler": "Jobtype.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/jobtypes",
+      "handler": "Jobtype.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/jobtypes/:id",
+      "handler": "Jobtype.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/jobtypes/:id",
+      "handler": "Jobtype.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "connection": "default",
+  "collectionName": "Job Type",
+  "info": {
+    "name": "jobtype",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "name": {
+      "unique": true,
+      "default": "Type",
+      "required": true,
+      "type": "string"
+    },
+    "jobs": {
+      "collection": "job",
+      "via": "jobtype"
+    }
+  }
+}

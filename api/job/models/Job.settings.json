@@ -1,0 +1,30 @@
+{
+  "connection": "default",
+  "collectionName": "Job",
+  "info": {
+    "name": "job",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "title": {
+      "minLength": 3,
+      "default": "Title",
+      "required": true,
+      "type": "string"
+    },
+    "description": {
+      "required": true,
+      "type": "richtext"
+    },
+    "jobtype": {
+      "model": "jobtype",
+      "via": "jobs"
+    }
+  }
+}
