@@ -1,0 +1,24 @@
+{
+  "connection": "default",
+  "collectionName": "languages",
+  "info": {
+    "name": "languages",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "LangName": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "jobs": {
+      "collection": "job"
+    }
+  }
+}

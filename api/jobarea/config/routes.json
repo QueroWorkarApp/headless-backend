@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/jobareas",
+      "handler": "Jobarea.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/jobareas/count",
+      "handler": "Jobarea.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/jobareas/:id",
+      "handler": "Jobarea.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/jobareas",
+      "handler": "Jobarea.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/jobareas/:id",
+      "handler": "Jobarea.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/jobareas/:id",
+      "handler": "Jobarea.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

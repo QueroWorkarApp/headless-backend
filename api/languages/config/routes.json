@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/jobtypes",
-      "handler": "Jobtype.find",
+      "path": "/languages",
+      "handler": "Languages.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/jobtypes/count",
-      "handler": "Jobtype.count",
+      "path": "/languages/count",
+      "handler": "Languages.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/jobtypes/:id",
-      "handler": "Jobtype.findOne",
+      "path": "/languages/:id",
+      "handler": "Languages.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/jobtypes",
-      "handler": "Jobtype.create",
+      "path": "/languages",
+      "handler": "Languages.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/jobtypes/:id",
-      "handler": "Jobtype.update",
+      "path": "/languages/:id",
+      "handler": "Languages.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/jobtypes/:id",
-      "handler": "Jobtype.delete",
+      "path": "/languages/:id",
+      "handler": "Languages.delete",
       "config": {
         "policies": []
       }

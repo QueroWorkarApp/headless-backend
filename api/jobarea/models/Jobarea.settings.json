@@ -1,8 +1,8 @@
 {
   "connection": "default",
-  "collectionName": "Job Type",
+  "collectionName": "JobArea",
   "info": {
-    "name": "jobtype",
+    "name": "jobarea",
     "description": ""
   },
   "options": {
@@ -12,15 +12,11 @@
     ]
   },
   "attributes": {
-    "name": {
-      "unique": true,
-      "default": "Type",
-      "required": true,
+    "AreaName": {
       "type": "string"
     },
     "jobs": {
-      "collection": "job",
-      "via": "jobtype"
+      "collection": "job"
     }
   }
 }

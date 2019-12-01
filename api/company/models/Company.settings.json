@@ -1,0 +1,40 @@
+{
+  "connection": "default",
+  "collectionName": "Company",
+  "info": {
+    "name": "company",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "Title": {
+      "required": true,
+      "type": "string"
+    },
+    "Address": {
+      "required": true,
+      "type": "text"
+    },
+    "Email": {
+      "required": true,
+      "type": "email"
+    },
+    "Website": {
+      "required": true,
+      "type": "string"
+    },
+    "Logo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "jobs": {
+      "collection": "job"
+    }
+  }
+}

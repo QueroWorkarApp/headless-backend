@@ -22,9 +22,64 @@
       "required": true,
       "type": "richtext"
     },
-    "jobtype": {
-      "model": "jobtype",
-      "via": "jobs"
+    "JobType": {
+      "enum": [
+        "FullTime",
+        "PartyTime",
+        "Remoto",
+        "Freelancer"
+      ],
+      "type": "enumeration"
+    },
+    "JobLevel": {
+      "required": true,
+      "enum": [
+        "Estagio",
+        "Jr",
+        "Pleno",
+        "Senior",
+        "Outros"
+      ],
+      "enumDefault": "Outros",
+      "type": "enumeration"
+    },
+    "ApplyLimitDate": {
+      "required": true,
+      "type": "date"
+    },
+    "Published": {
+      "type": "boolean"
+    },
+    "Salary": {
+      "type": "decimal",
+      "max": 50000,
+      "default": "2000",
+      "min": 100
+    },
+    "ApplyEmail": {
+      "type": "email"
+    },
+    "ApplyWebsite": {
+      "minLength": 5,
+      "type": "string"
+    },
+    "company": {
+      "model": "company"
+    },
+    "jobareas": {
+      "collection": "jobarea"
+    },
+    "languages": {
+      "collection": "languages"
+    },
+    "Requirements": {
+      "minLength": 4,
+      "required": true,
+      "type": "richtext"
+    },
+    "Desirable": {
+      "minLength": 3,
+      "type": "richtext"
     }
   }
 }
