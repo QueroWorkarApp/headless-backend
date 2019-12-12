@@ -1,0 +1,22 @@
+module.exports = {
+      definition: `
+        type JobCountInCompany {
+        company: [Company]
+        jobsCount: Int!
+        }
+    `,
+
+    query: `
+        companyCount: [JobCountInCompany]
+    `,
+
+    resolver: {
+        Query: {
+        companyCount: {
+            description: 'Returns job count by Company',
+            resolver: 'Company.countJobs' // It will use the action `findOne` located in the `Person.js` controller.
+        }
+        }
+    }
+
+}
