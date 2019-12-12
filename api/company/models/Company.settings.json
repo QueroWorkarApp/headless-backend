@@ -34,7 +34,8 @@
       "plugin": "upload"
     },
     "jobs": {
-      "collection": "job"
+      "collection": "job",
+      "via": "company"
     }
   }
 }

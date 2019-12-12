@@ -63,9 +63,6 @@
       "minLength": 5,
       "type": "string"
     },
-    "company": {
-      "model": "company"
-    },
     "jobareas": {
       "collection": "jobarea"
     },
@@ -80,6 +77,10 @@
     "Desirable": {
       "minLength": 3,
       "type": "richtext"
+    },
+    "company": {
+      "model": "company",
+      "via": "jobs"
     }
   }
 }
